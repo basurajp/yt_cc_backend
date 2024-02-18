@@ -45,6 +45,7 @@ const registerUser = asyncHandler(async (req, res) => {
     coverImage: coverImage?.url || "",
     username: username.toLowerCase(),
     password,
+    email,
   });
 
   // To check if the user is properly created or not
